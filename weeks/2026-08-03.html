@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>AIニュース週報 第1回｜2026.7.27-8.3</title>
+<style>
+  :root {
+    --main: #D4722A;
+    --sub: #E8944A;
+    --accent: #F5C28A;
+    --text-brand: #C47A2A;
+    --bg: #15120F;
+    --bg-card: #1E1A16;
+    --bg-card2: #201C18;
+    --border: #322A22;
+    --text: #EFE7DC;
+    --text-dim: #B6AA9C;
+    --text-faint: #8A7F72;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  img, svg { max-width: 100%; }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 20px 16px 56px;
+    width: 100%;
+  }
+
+  /* ヘッダー */
+  header {
+    padding: 4px 0 20px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 22px;
+  }
+  .kicker {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--bg);
+    background: linear-gradient(135deg, var(--main), var(--sub));
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin: 0 0 8px;
+    color: var(--text);
+    font-weight: 800;
+  }
+  h1 .accent { color: var(--accent); }
+  .period {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin: 0;
+  }
+
+  /* 今週の一言まとめ */
+  .summary-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--sub);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 28px;
+  }
+  .summary-box .label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--sub);
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+    display: block;
+  }
+  .summary-box p {
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 1.85;
+    color: var(--text);
+  }
+
+  /* セクション見出し（一覧） */
+  .toc {
+    font-size: 12px;
+    color: var(--text-faint);
+    margin: 0 0 24px;
+    line-height: 1.6;
+  }
+
+  /* カード */
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 16px;
+    margin-bottom: 18px;
+    position: relative;
+  }
+  .card.high {
+    border-left: 4px solid var(--main);
+    background: var(--bg-card2);
+  }
+  .card.mid {
+    border-left: 4px solid var(--border);
+  }
+
+  .badge-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 20px;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+  }
+  .badge.high {
+    background: var(--main);
+    color: #1A0F06;
+  }
+  .badge.mid {
+    background: transparent;
+    color: var(--text-faint);
+    border: 1px solid var(--border);
+  }
+  .date {
+    font-size: 11px;
+    color: var(--text-faint);
+  }
+
+  .card h2 {
+    font-size: 16.5px;
+    line-height: 1.5;
+    margin: 0 0 14px;
+    color: var(--text);
+    font-weight: 700;
+  }
+
+  .block {
+    margin-bottom: 12px;
+  }
+  .block:last-of-type {
+    margin-bottom: 14px;
+  }
+  .block .h {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 0 0 5px;
+    letter-spacing: 0.03em;
+  }
+  .card.mid .block .h {
+    color: var(--sub);
+    opacity: 0.85;
+  }
+  .block p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text-dim);
+  }
+
+  .source-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12.5px;
+    color: var(--sub);
+    text-decoration: none;
+    border-top: 1px solid var(--border);
+    padding-top: 10px;
+    margin-top: 4px;
+    word-break: break-all;
+  }
+  .source-link:active,
+  .source-link:hover {
+    color: var(--accent);
+  }
+  .source-link .arrow {
+    flex-shrink: 0;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 11.5px;
+    color: var(--text-faint);
+    line-height: 1.8;
+  }
+
+  @media (min-width: 480px) {
+    h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="kicker">AIニュース週報 ／ 第1回</span>
+    <h1>今週のAI動向<br><span class="accent">2026年7月27日〜8月3日</span></h1>
+    <p class="period">全6件・重要度高2件／中4件</p>
+  </header>
+
+  <div class="summary-box">
+    <span class="label">今週の一言まとめ</span>
+    <p>今週は派手な新モデル発表より「議事録の後工程」「文字起こしの精度」「Windowsで動く自律エージェント」といった、地味やけど実務にそのまま刺さるネタが多かった。特にNotionの議事録連動とOpenAIの新文字起こしAPIは、手元の仕組み（gijirokuスキルやwhisper-web）に直結する。</p>
+  </div>
+
+  <!-- 1: 高 -->
+  <div class="card high">
+    <div class="badge-row">
+      <span class="badge high">重要度：高</span>
+      <span class="date">2026-07-31</span>
+    </div>
+    <h2>Notionの議事録AIが自動でエージェントを起動</h2>
+    <div class="block">
+      <p class="h">何があったか</p>
+      <p>7月31日、Notionの「AI議事録」（会議の音声を自動で要約する機能）が要約を出し終えた瞬間に、あらかじめ用意したカスタムAgent（＝決まった作業を自動でやってくれるAIの仕組み）を連動起動できるようになった。トラッカー更新・Slackやメールへの要点共有・タスク化までを人手なしで回せる設定。</p>
+    </div>
+    <div class="block">
+      <p class="h">何ができるようになるか</p>
+      <p>議事録スキルで手動でやってる「要約→共有→タスク化」の後工程を、Notion側の設定だけで自動化できる可能性がある。英語UIでの発表で、日本語運用での挙動は未確認。</p>
+    </div>
+    <a class="source-link" href="https://www.notion.com/releases/2026-07-31" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> notion.com/releases/2026-07-31
+    </a>
+  </div>
+
+  <!-- 2: 高 -->
+  <div class="card high">
+    <div class="badge-row">
+      <span class="badge high">重要度：高</span>
+      <span class="date">2026-07-29</span>
+    </div>
+    <h2>OpenAIが文字起こし専用の新AIを2種類、APIで公開</h2>
+    <div class="block">
+      <p class="h">何があったか</p>
+      <p>7月29日、OpenAIが録音済み音声向け「GPT-Transcribe」（1分あたり$0.0045＝約0.74円）とリアルタイム向け「GPT-Live-Transcribe」（1分あたり$0.017＝約2.78円）という文字起こし専用モデルをAPIで公開。雑音や専門用語への強さを従来モデル（whisper-1）より改善。</p>
+    </div>
+    <div class="block">
+      <p class="h">何ができるようになるか</p>
+      <p>自作のwhisper-web（文字起こしアプリ）やvideo-editの文字起こし部分をこのAPIに載せ替えれば、精度・コストの改善が見込める。ただしAPI提供のみで、組み込みには自分でコードを書き直す作業が必要。</p>
+    </div>
+    <a class="source-link" href="https://gigazine.net/gsc_news/en/20260729-gpt-live-transcribe/" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> gigazine.net/gsc_news/en/20260729-gpt-live-transcribe
+    </a>
+  </div>
+
+  <!-- 3: 中 -->
+  <div class="card mid">
+    <div class="badge-row">
+      <span class="badge mid">重要度：中</span>
+      <span class="date">2026-07-28</span>
+    </div>
+    <h2>Perplexityの自律デスクトップエージェントがWindowsに対応</h2>
+    <div class="block">
+      <p class="h">何があったか</p>
+      <p>7月28日、これまでMacのみだったPerplexityの自律型デスクトップエージェント「Personal Computer」がWindows向けに公開。ローカルファイルの読み書き、Word/Excel/PowerPoint操作、複数アプリをまたいだ作業の自動化ができる。</p>
+    </div>
+    <div class="block">
+      <p class="h">何ができるようになるか</p>
+      <p>メイン機がWindowsなので試せる対象だが、月200ドル（日本円で3万円前後）の上位プラン限定で、今すぐ気軽に触れる料金ではない。動向として押さえておく位置づけ。</p>
+    </div>
+    <a class="source-link" href="https://siliconangle.com/2026/07/28/perplexity-brings-personal-computer-ai-agent-windows/" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> siliconangle.com/.../perplexity-personal-computer-windows
+    </a>
+  </div>
+
+  <!-- 4: 中 -->
+  <div class="card mid">
+    <div class="badge-row">
+      <span class="badge mid">重要度：中</span>
+      <span class="date">2026-07-29</span>
+    </div>
+    <h2>Codex CLIがセッション管理を強化</h2>
+    <div class="block">
+      <p class="h">何があったか</p>
+      <p>7月29日、OpenAIのコーディング用CLI「Codex」がv0.146.0に更新。作業スレッドに名前を付けて残す、重要なスレッドをピン留めする、会話を分岐させて並行進行するなど、複数作業を同時に抱えるときの管理機能が強化された。</p>
+    </div>
+    <div class="block">
+      <p class="h">何ができるようになるか</p>
+      <p>導入予定のCodex CLIで「どのスレッドが何の話だったか」問題に直結する改善。導入時にこの機能を前提に使い方を組める。</p>
+    </div>
+    <a class="source-link" href="https://github.com/openai/codex/releases/tag/rust-v0.146.0" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> github.com/openai/codex/releases/tag/rust-v0.146.0
+    </a>
+  </div>
+
+  <!-- 5: 中 -->
+  <div class="card mid">
+    <div class="badge-row">
+      <span class="badge mid">重要度：中</span>
+      <span class="date">2026-07-30</span>
+    </div>
+    <h2>GoogleのVids（AI動画編集）にアバターと8言語ナレーション追加</h2>
+    <div class="block">
+      <p class="h">何があったか</p>
+      <p>7月30日付のGoogle Workspace月次アップデートで、動画編集ツール「Vids」にAIアバター生成（見た目と声を指定できる）、日本語を含む8言語でのAIナレーション読み上げ、スライドから自動で構成台本を作る機能が追加された。</p>
+    </div>
+    <div class="block">
+      <p class="h">何ができるようになるか</p>
+      <p>動画編集業務（video-edit、ゴリラ漫画のリール化など）で、ナレーション読み上げやアバター動画の下地作りに使えそう。ただし法人向けWorkspaceプラン（Business/Enterprise）向けの展開である点に注意。</p>
+    </div>
+    <a class="source-link" href="https://workspace.google.com/blog/product-announcements/july-2026-workspace-feature-drop" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> workspace.google.com/.../july-2026-workspace-feature-drop
+    </a>
+  </div>
+
+  <!-- 6: 中 -->
+  <div class="card mid">
+    <div class="badge-row">
+      <span class="badge mid">重要度：中</span>
+      <span class="date">2026-07-31</span>
+    </div>
+    <h2>Geminiに自分の画像を使う機能、エージェント「Spark」が世界展開</h2>
+    <div class="block">
+      <p class="h">何があったか</p>
+      <p>7月31日のGemini月次アップデートで、(1)自分の顔写真を一度覚えさせれば以後アップロードなしで画像生成に使える機能、(2)裏で自動的にタスクをこなすエージェント機能「Gemini Spark」の世界展開が発表された。</p>
+    </div>
+    <div class="block">
+      <p class="h">何ができるようになるか</p>
+      <p>(1)は現時点で米国ユーザー限定で、日本での利用可否は未確認。(2)のSparkはEU・英国・スイス・ナイジェリアを除く地域に展開されたとのことで、日本からは使える可能性が高い。</p>
+    </div>
+    <a class="source-link" href="https://blog.google/products-and-platforms/products/gemini/gemini-drop-july-2026/" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> blog.google/.../gemini-drop-july-2026
+    </a>
+  </div>
+
+  <footer>
+    AIニュース週報 第1回<br>
+    2026年7月27日〜8月3日分
+  </footer>
+
+</div>
+</body>
+</html>
