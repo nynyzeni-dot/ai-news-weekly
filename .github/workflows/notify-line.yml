@@ -1,0 +1,56 @@
+name: LINE通知
+
+# index.html が更新されたとき（＝週報が新しくなったとき）にLINEへ通知する。
+# 手動でも実行できる（Actionsタブ → LINE通知 → Run workflow）。
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Secretsの有無を確認
+        env:
+          TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          USER_ID: ${{ secrets.LINE_USER_ID }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::error::LINE_CHANNEL_ACCESS_TOKEN が未設定です"
+            exit 1
+          fi
+          if [ -z "$USER_ID" ]; then
+            echo "::error::LINE_USER_ID が未設定です"
+            exit 1
+          fi
+          echo "Secrets OK"
+
+      - name: LINEにプッシュ通知
+        env:
+          TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          USER_ID: ${{ secrets.LINE_USER_ID }}
+        run: |
+          BODY=$(jq -n --arg to "$USER_ID" '{
+            to: $to,
+            messages: [{
+              type: "text",
+              text: "📰 AIニュース週報が更新されたで\n\nhttps://nynyzeni-dot.github.io/ai-news-weekly/"
+            }]
+          }')
+
+          CODE=$(curl -sS -o /tmp/line_res.txt -w "%{http_code}" \
+            -X POST https://api.line.me/v2/bot/message/push \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "Content-Type: application/json" \
+            -d "$BODY")
+
+          echo "HTTP $CODE"
+          cat /tmp/line_res.txt
+
+          if [ "$CODE" != "200" ]; then
+            echo "::error::LINE APIがHTTP $CODE を返しました"
+            exit 1
+          fi
