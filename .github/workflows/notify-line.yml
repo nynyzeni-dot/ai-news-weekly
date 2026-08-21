@@ -1,12 +1,13 @@
+# 【停止中】2026-08-21にLINE配信をVPS経由へ移行したため、自動実行を止めた。
+# 移行先: VPSのcron（毎週月曜8:15 JST）→ /usr/local/bin/daily-trend-radar-deliver.py
+#         設定は /etc/daily-trend-radar/weekly.env（LINEトークンは在庫Botのものを流用）
+# このファイルは参考のため残してある。再開するならGitHub Secretsの登録が要る。
+
 name: LINE通知
 
 # index.html が更新されたとき（＝週報が新しくなったとき）にLINEへ通知する。
 # 手動でも実行できる（Actionsタブ → LINE通知 → Run workflow）。
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'index.html'
   workflow_dispatch:
 
 jobs:
