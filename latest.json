@@ -1,1 +1,11 @@
-{"date": "1970-01-01", "count": 0, "items": []}
+{
+  "date": "2026-08-24",
+  "count": 4,
+  "url": "https://nynyzeni-dot.github.io/ai-news-weekly/weeks/2026-08-24.html",
+  "items": [
+    {"title": "Claude CodeにUIデザイン下書き機能が追加", "why": "画面デザインの叩き台をデザイナーなしでその場で作れる", "url": "https://code.claude.com/docs/en/whats-new/2026-w34"},
+    {"title": "Googleスライドがボタン一つでナレーション動画に", "why": "資料をその場でナレーション入り動画にして共有できる", "url": "https://workspaceupdates.googleblog.com/2026/08/record-presentations-in-google-slides-with-Google-Vids.html"},
+    {"title": "Adobe Fireflyの音声生成3種が一般提供に", "why": "動画のBGM・ナレーション・効果音を著作権気にせず用意できる", "url": "https://blog.adobe.com/en/publish/2026/08/20/adobe-firefly-expands-its-creative-ai-studio-generate-music-speech-and-sound-effects-in-one-place"},
+    {"title": "xAIの自律エージェント「Grok Bot」対象拡大", "why": "裏で働くAIエージェントの選択肢が増えた（要有料プラン）", "url": "https://x.ai/news/grok-bot-more-plans"}
+  ]
+}
