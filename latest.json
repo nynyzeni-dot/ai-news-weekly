@@ -1,11 +1,11 @@
 {
-  "date": "2026-08-24",
+  "date": "2026-08-31",
   "count": 4,
-  "url": "https://nynyzeni-dot.github.io/ai-news-weekly/weeks/2026-08-24.html",
+  "url": "https://nynyzeni-dot.github.io/ai-news-weekly/weeks/2026-08-31.html",
   "items": [
-    {"title": "Claude CodeにUIデザイン下書き機能が追加", "why": "画面デザインの叩き台をデザイナーなしでその場で作れる", "url": "https://code.claude.com/docs/en/whats-new/2026-w34"},
-    {"title": "Googleスライドがボタン一つでナレーション動画に", "why": "資料をその場でナレーション入り動画にして共有できる", "url": "https://workspaceupdates.googleblog.com/2026/08/record-presentations-in-google-slides-with-Google-Vids.html"},
-    {"title": "Adobe Fireflyの音声生成3種が一般提供に", "why": "動画のBGM・ナレーション・効果音を著作権気にせず用意できる", "url": "https://blog.adobe.com/en/publish/2026/08/20/adobe-firefly-expands-its-creative-ai-studio-generate-music-speech-and-sound-effects-in-one-place"},
-    {"title": "xAIの自律エージェント「Grok Bot」対象拡大", "why": "裏で働くAIエージェントの選択肢が増えた（要有料プラン）", "url": "https://x.ai/news/grok-bot-more-plans"}
+    {"title": "Claude in Chromeが全プラン一般提供、Cowork内蔵ブラウザも登場", "why": "ログイン済みのChromeでClaudeに実務作業を任せられるようになった", "url": "https://ai.watch.impress.co.jp/docs/news/2136047.html"},
+    {"title": "美容室向けLINEツール「PiTTLINE」本格展開、AI接客も搭載", "why": "LINE公式アカウントの中だけで予約〜接客後フォローまで自動化できるかも", "url": "https://prtimes.jp/main/html/rd/p/000000003.000186830.html"},
+    {"title": "PhotoshopにAIと会話しながら編集する新エディター（β）", "why": "施術後写真やSNS投稿画像を文章と手描き指示だけで調整できる", "url": "https://blog.adobe.com/jp/publish/2026/08/28/cc-new-photoshop-innovations-bring-you-more-choice-and-control-at-every-stage-of-your-creative-process"},
+    {"title": "Google Chat内で直接Geminiに頼める「Ask Gemini in Chat」登場", "why": "Google Chatを使っているなら便利、ただし今は英語アカウント限定", "url": "https://workspaceupdates.googleblog.com/2026/08/ask-gemini-in-chat.html"}
   ]
 }
