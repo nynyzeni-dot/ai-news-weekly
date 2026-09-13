@@ -1,10 +1,5 @@
 {
-  "date": "2026-09-07",
-  "count": 3,
-  "url": "https://nynyzeni-dot.github.io/ai-news-weekly/weeks/2026-09-07.html",
-  "items": [
-    {"title": "Claude新モデル「Fable 5.1」登場、誤検出6割減", "why": "Claude Codeで安全装置の誤介入が減り、コストも安くなる", "url": "https://ai.watch.impress.co.jp/docs/news/2137593.html"},
-    {"title": "録音するだけで報告書が仕上がる「レコレポ」登場", "why": "商談やヒアリングをスマホで録音するだけで議事録が整う", "url": "https://ai.watch.impress.co.jp/docs/news/2137368.html"},
-    {"title": "Google Vids、資料をそのまま動画に変換", "why": "PDFやWordの提案資料をナレーション付き動画にできる", "url": "https://ai.watch.impress.co.jp/docs/news/2137994.html"}
-  ]
+  "date": "2026-09-14",
+  "count": 0,
+  "items": []
 }
