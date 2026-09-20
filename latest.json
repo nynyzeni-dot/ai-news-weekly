@@ -1,5 +1,11 @@
 {
-  "date": "2026-09-14",
-  "count": 0,
-  "items": []
+  "date": "2026-09-21",
+  "count": 4,
+  "url": "https://nynyzeni-dot.github.io/ai-news-weekly/weeks/2026-09-21.html",
+  "items": [
+    {"title": "Notionに「Skills」、Claude Codeへ同期", "why": "毎回同じ手順の作業をNotionでスキルにまとめておけば、Claude Codeでもそのまま呼び出せるようになる", "url": "https://www.notion.com/releases/2026-09-15"},
+    {"title": "Claude、対話だけで資料とスライドまで作成", "why": "顧客向け資料やLPの下書きをClaudeとの会話だけで作って、そのままWordやPowerPointで渡せるようになる", "url": "https://claude.com/blog/cowork-is-now-claude"},
+    {"title": "Gemini Notebook、スマホの録音機能を追加", "why": "商談やヒアリングをスマホで録音するだけでGemini Notebookに蓄積され、あとでチャットで要点を聞けるようになる", "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-study-tools-september-2026/"},
+    {"title": "Claude Codeの「Projects」刷新", "why": "ゴールを伝えるだけでClaude Codeが複数のクラウドセッションに作業を振り分けて並行して進めてくれるようになる", "url": "https://claude.com/blog/projects-redesigned"}
+  ]
 }
