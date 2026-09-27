@@ -1,11 +1,12 @@
 {
-  "date": "2026-09-21",
-  "count": 4,
-  "url": "https://nynyzeni-dot.github.io/ai-news-weekly/weeks/2026-09-21.html",
+  "date": "2026-09-28",
+  "count": 5,
+  "url": "https://nynyzeni-dot.github.io/ai-news-weekly/weeks/2026-09-28.html",
   "items": [
-    {"title": "Notionに「Skills」、Claude Codeへ同期", "why": "毎回同じ手順の作業をNotionでスキルにまとめておけば、Claude Codeでもそのまま呼び出せるようになる", "url": "https://www.notion.com/releases/2026-09-15"},
-    {"title": "Claude、対話だけで資料とスライドまで作成", "why": "顧客向け資料やLPの下書きをClaudeとの会話だけで作って、そのままWordやPowerPointで渡せるようになる", "url": "https://claude.com/blog/cowork-is-now-claude"},
-    {"title": "Gemini Notebook、スマホの録音機能を追加", "why": "商談やヒアリングをスマホで録音するだけでGemini Notebookに蓄積され、あとでチャットで要点を聞けるようになる", "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-study-tools-september-2026/"},
-    {"title": "Claude Codeの「Projects」刷新", "why": "ゴールを伝えるだけでClaude Codeが複数のクラウドセッションに作業を振り分けて並行して進めてくれるようになる", "url": "https://claude.com/blog/projects-redesigned"}
+    {"title": "Claude新モデル「Opus 5.5」、コスト2割減・3割速く", "why": "Claude Codeで「/model opus」に切り替えれば、複雑な改修やリファクタリングを今までより安く・速く任せられるようになる", "url": "https://ai.watch.impress.co.jp/docs/news/2142847.html"},
+    {"title": "Claude公式マーケットプレイス開設、Notion連携も", "why": "NotionをClaudeにつなげておけば、議事録やLINE Botの仕様メモをコピペせずにClaudeがそのまま参照・更新してくれるようになる", "url": "https://claude.com/blog/claude-marketplace"},
+    {"title": "Google、声を一から作れる音声AI「Gemini TTS」", "why": "実写動画が始まったあと、台本さえあればAPI経由でナレーションやアテレコをPC上で自動生成できるようになる", "url": "https://ai.watch.impress.co.jp/docs/news/2143048.html"},
+    {"title": "録音だけで議事録とタスク整理「ENSOU AI」", "why": "商談やヒアリングの録音から文字起こし・要約・タスク出しまでを1つの画面で完結できるようになる", "url": "https://prtimes.jp/main/html/rd/p/000000032.000166238.html"},
+    {"title": "美容室専用AI「SALOMATE」がSNS発信に対応", "why": "クライアントの美容室がほとんど出せていないSNS発信を丸ごとAIに任せられる仕組みとして提案できる", "url": "https://prtimes.jp/main/html/rd/p/000000019.000190071.html"}
   ]
 }
