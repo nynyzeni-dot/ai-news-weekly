@@ -1,12 +1,11 @@
 {
-  "date": "2026-09-28",
-  "count": 5,
-  "url": "https://nynyzeni-dot.github.io/ai-news-weekly/weeks/2026-09-28.html",
+  "date": "2026-10-05",
+  "count": 4,
+  "url": "https://nynyzeni-dot.github.io/ai-news-weekly/weeks/2026-10-05.html",
   "items": [
-    {"title": "Claude新モデル「Opus 5.5」、コスト2割減・3割速く", "why": "Claude Codeで「/model opus」に切り替えれば、複雑な改修やリファクタリングを今までより安く・速く任せられるようになる", "url": "https://ai.watch.impress.co.jp/docs/news/2142847.html"},
-    {"title": "Claude公式マーケットプレイス開設、Notion連携も", "why": "NotionをClaudeにつなげておけば、議事録やLINE Botの仕様メモをコピペせずにClaudeがそのまま参照・更新してくれるようになる", "url": "https://claude.com/blog/claude-marketplace"},
-    {"title": "Google、声を一から作れる音声AI「Gemini TTS」", "why": "実写動画が始まったあと、台本さえあればAPI経由でナレーションやアテレコをPC上で自動生成できるようになる", "url": "https://ai.watch.impress.co.jp/docs/news/2143048.html"},
-    {"title": "録音だけで議事録とタスク整理「ENSOU AI」", "why": "商談やヒアリングの録音から文字起こし・要約・タスク出しまでを1つの画面で完結できるようになる", "url": "https://prtimes.jp/main/html/rd/p/000000032.000166238.html"},
-    {"title": "美容室専用AI「SALOMATE」がSNS発信に対応", "why": "クライアントの美容室がほとんど出せていないSNS発信を丸ごとAIに任せられる仕組みとして提案できる", "url": "https://prtimes.jp/main/html/rd/p/000000019.000190071.html"}
+    {"title": "Claude新モデル「Sonnet 5.5」、3割速く・安く", "why": "Claude Codeで普段の実装作業に使うと、料金はそのままで3割速く・安く回せるようになる", "url": "https://www.anthropic.com/claude-sonnet-5-5"},
+    {"title": "higgsfield「Ads Studio」、物販広告を自動量産", "why": "クライアントの美容室の物販商品の宣伝画像を、商品写真1枚から何パターンも量産できるようになる", "url": "https://higgsfield.ai/blog/higgsfield-ads-studio"},
+    {"title": "Claude Codeを自分で改造できる「mods」登場", "why": "本番コマンド実行前に確認を必須にするmodを入れれば、VPSやLINE Botの本番を誤って壊す事故を防げるようになる", "url": "https://claude.com/blog/claude-code-mods"},
+    {"title": "MEO対策「口コミロボ」、Instagram連携開始", "why": "クライアントの美容室グループがInstagramに投稿した内容を、そのままGoogleマップの集客にも使い回せるようになる", "url": "https://prtimes.jp/main/html/rd/p/000000082.000165098.html"}
   ]
 }
