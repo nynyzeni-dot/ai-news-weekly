@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>AIニュース週報 第9回｜2026.9.28-10.5</title>
+<title>AIニュース週報 第10回｜2026.10.5-10.12</title>
 <style>
   :root {
     --main: #D4722A;
@@ -250,33 +250,33 @@
 <div class="wrap">
 
   <header>
-    <span class="kicker">AIニュース週報 ／ 第9回</span>
-    <h1>今週のAI動向<br><span class="accent">2026年9月28日〜10月5日</span></h1>
+    <span class="kicker">AIニュース週報 ／ 第10回</span>
+    <h1>今週のAI動向<br><span class="accent">2026年10月5日〜10月12日</span></h1>
     <p class="period">全4件・重要度高2件／中2件</p>
   </header>
 
   <div class="summary-box">
     <span class="label">今週の一言まとめ</span>
-    <p>今週はClaudeのSonnet 5.5が出て、普段の実装作業がまた速く安くなった週やった。higgsfieldのAds Studioは商品写真1枚で広告を量産してくれるし、口コミロボのInstagram連携は複数店舗もののGoogleマップ集客をまとめて楽にしてくれそうやで。</p>
+    <p>今週はAnthropicの新しい小型モデルHaiku 5.5が出て、議事録の要約みたいな軽い繰り返し作業がますます安う回せるようになった週やった。higgsfieldの方はAd Multiplierで物販の動画広告をバリエーション量産できるようになったし、画像モデルも4K対応で画質が上がったで。ブラウザ操作エージェントの土台もSDKに標準で入って、自作アプリに組み込みやすなったな。</p>
   </div>
 
   <!-- 1: 高 -->
   <div class="card high">
     <div class="badge-row">
       <span class="badge high">重要度：高</span>
-      <span class="date">2026-09-28</span>
+      <span class="date">2026-10-07</span>
     </div>
-    <h2>Claude新モデル「Sonnet 5.5」、3割速く・安く</h2>
+    <h2>Claude新モデル「Haiku 5.5」、激安・高速に</h2>
     <div class="block">
       <p class="h">何があったか</p>
-      <p>9月28日、Anthropicが普段の実装作業で主力になる中位モデル「Claude Sonnet 5.5」（＝Opusより軽量で、日常のコーディングに使うモデルのこと）をリリースした。Sonnet 5比で生成速度が3割以上速くなり、同じ作業をこなすのに必要なトークン数が減ることで実質コストも最大3割下がった。API料金の単価自体はSonnet 5と同じで、Claude Platformで「claude-sonnet-5-5」として即日利用できる。</p>
+      <p>10月7日、Anthropicが小型モデル「Claude Haiku 5.5」（＝Opus・Sonnetより軽量で、大量の作業を低コストでこなすためのモデルのこと）をリリースした。100万トークンのコンテキストウィンドウを持ち、要約・分類・データベース照会といった反復作業向けに最適化されている。料金は10万トークンまでの入力が100万トークンあたり0.10ドルで、前のHaikuモデルより大幅に安い。Claude Codeのコーディング作業でOpus・Sonnetと組み合わせる「サブエージェント」用のモデルとしても使える。</p>
     </div>
     <div class="block">
       <p class="h">何ができるようになるか</p>
-      <p>Claude Codeで自作のNext.js・FastAPIアプリを触る普段の実装作業（先週のOpus 5.5は複雑な改修向け、今回のSonnet 5.5は日常の実装向け）が、料金はそのままで3割速く・安く回せるようになる。</p>
+      <p>Claude Codeで自作のLINE Bot・FastAPIアプリを触っているとき、議事録の要約やアンケート自由記述の分類のような軽い繰り返し作業をサブエージェントにHaiku 5.5で任せれば、Opus・Sonnetだけで回すより安く・速く済ませられるようになる。</p>
     </div>
-    <a class="source-link" href="https://www.anthropic.com/claude-sonnet-5-5" target="_blank" rel="noopener">
-      <span class="arrow">&#8599;</span> anthropic.com/claude-sonnet-5-5
+    <a class="source-link" href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> anthropic.com/claude-haiku-5-5
     </a>
   </div>
 
@@ -284,19 +284,19 @@
   <div class="card high">
     <div class="badge-row">
       <span class="badge high">重要度：高</span>
-      <span class="date">2026-10-01</span>
+      <span class="date">2026-10-06</span>
     </div>
-    <h2>higgsfield「Ads Studio」、物販広告を自動量産</h2>
+    <h2>higgsfield、広告動画を複数パターン量産</h2>
     <div class="block">
       <p class="h">何があったか</p>
-      <p>10月1日、画像・動画生成AI「higgsfield」が、商品写真1枚とブランド情報（ロゴ・配色・トーン・訴求ポイント）を一度登録しておくだけで、価格訴求・使用感・ライフスタイル訴求など複数パターンの広告クリエイティブを最大20枚まとめて自動生成する「Ads Studio」を公開した。1枚あたり4クレジット（約20円）で、チャットで「もっとこんな雰囲気で」と追加の作り直しも頼める。</p>
+      <p>10月6日、画像・動画生成AI「higgsfield」がAds Studio内に新ツール「Ad Multiplier」を追加した。すでにある動画広告1本を参考に、登場人物・商品・場所だけを指定の素材に入れ替えて、フックやCTA（＝「今すぐ予約」のような行動喚起の文言のこと）を変えた複数パターンを一度に作れる。元動画の構図・カット・タイミングはそのまま保たれる。参考動画は4〜30秒、画像は最大20枚まで指定でき、ClaudeなどのAIアシスタントから直接呼び出せる連携の仕組み「Higgsfield MCP」のスキルとしても使える。</p>
     </div>
     <div class="block">
       <p class="h">何ができるようになるか</p>
-      <p>クライアントの美容室（複数店舗のグループを含む）が扱う物販商品（シャンプー・トリートメント等）の宣伝画像を、商品写真を1枚登録するだけでhiggsfieldのAds Studioで何パターンも量産できるようになり、物販の販促提案にそのまま使える。</p>
+      <p>クライアントの美容室グループの物販動画広告を1本作れば、商品やモデルだけ入れ替えつつ訴求文言（フック・CTA）を変えたパターンをAd Multiplierでまとめて量産できるようになり、物販の販促提案の幅を広げられる。</p>
     </div>
-    <a class="source-link" href="https://higgsfield.ai/blog/higgsfield-ads-studio" target="_blank" rel="noopener">
-      <span class="arrow">&#8599;</span> higgsfield.ai/blog/higgsfield-ads-studio
+    <a class="source-link" href="https://higgsfield.ai/blog/ad-multiplier-ads-studio" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> higgsfield.ai/blog/ad-multiplier-ads-studio
     </a>
   </div>
 
@@ -304,19 +304,19 @@
   <div class="card mid">
     <div class="badge-row">
       <span class="badge mid">重要度：中</span>
-      <span class="date">2026-10-01</span>
+      <span class="date">2026-10-06</span>
     </div>
-    <h2>Claude Codeを自分で改造できる「mods」登場</h2>
+    <h2>higgsfield、画像モデルが4K対応に進化</h2>
     <div class="block">
       <p class="h">何があったか</p>
-      <p>10月1日、AnthropicがClaude Codeの動きに割り込んで書き換えられる拡張の仕組み「mods」（＝Claude Codeの挙動を自分用に改造できる小さなプログラムのこと）を正式公開した。プロンプトの書き換え、ツール呼び出しのブロックやリトライ、権限確認の自動化などができ、既存の「/diff」のような標準機能もmodとして入れ替えられる。自分でTypeScriptを書く以外に、Claude Code自身にmodを作らせることもできる。</p>
+      <p>10月6日、higgsfieldにGoogleの最新画像生成モデル「Nano Banana 2.1」が追加された。出力解像度を最大4Kまで選べるようになり、最大14枚の参照画像を使って人物の顔や商品を最大40枚のバッチで一貫して描ける。画像内の文字も翻訳込みで読みやすく描けるようになり、チャットで「この部分だけ直して」と頼む部分編集にも対応する。</p>
     </div>
     <div class="block">
       <p class="h">何ができるようになるか</p>
-      <p>VPSやLINE Botの本番環境をClaude Codeで直接操作しているとき、「本番コマンドを実行する前に必ず確認を求める」modをClaude Codeに作ってもらって入れておけば、うっかり本番を壊す事故を自動で防げるようになる。</p>
+      <p>いつものhiggsfieldでモデルをNano Banana 2.1に切り替えれば、顧客向け資料やLPに使う画像を、文字入りでも読みやすく・高解像度で作れるようになり、LP制作や資料の図版づくりの質を上げられる。</p>
     </div>
-    <a class="source-link" href="https://claude.com/blog/claude-code-mods" target="_blank" rel="noopener">
-      <span class="arrow">&#8599;</span> claude.com/blog/claude-code-mods
+    <a class="source-link" href="https://higgsfield.ai/nano-banana-2-1-intro" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> higgsfield.ai/nano-banana-2-1-intro
     </a>
   </div>
 
@@ -324,25 +324,26 @@
   <div class="card mid">
     <div class="badge-row">
       <span class="badge mid">重要度：中</span>
-      <span class="date">2026-10-04</span>
+      <span class="date">2026-10-07</span>
     </div>
-    <h2>MEO対策「口コミロボ」、Instagram連携開始</h2>
+    <h2>Claude API、ブラウザ操作ツールが標準搭載</h2>
     <div class="block">
       <p class="h">何があったか</p>
-      <p>10月4日、SweetLeap株式会社が口コミ対策・MEO（＝Googleマップでの検索上位表示対策のこと）AI「口コミロボ™」に、Instagramの投稿をそのままGoogleビジネスプロフィール（Googleマップの店舗情報）に展開できる連携機能を追加した。Instagramの投稿が「投稿候補」として自動的に並び、どれをGoogleマップ側にも載せたかが一画面で分かる。複数店舗分の情報を本部と各店舗で権限を分けて管理することもできる。</p>
+      <p>10月7日、AnthropicがPython・TypeScript向けSDKに、ブラウザ操作・PC操作をClaudeにやらせるための標準クラス（ベータ版）を追加した。これまでは呼び出しのループ処理や、URL・ファイルの許可範囲、実行前の確認フローを自分で全部書く必要があったが、新しいクラスを使えば「クリックする」「入力する」といった操作を1メソッドずつ実装するだけで、ループ処理と確認フローの土台はSDK側が担ってくれる。</p>
     </div>
     <div class="block">
       <p class="h">何ができるようになるか</p>
-      <p>クライアントの美容室グループがInstagramに投稿した内容を、二重に作業せずそのままGoogleマップの集客にも使い回せるようになり、複数店舗を抱えるクライアントへの「予約につながる新規集客」の提案に使える。ただし料金は記事に明記されておらず、導入前に確認したい。</p>
+      <p>Claude Code任せではなく自分のFastAPIアプリやVPS上の仕組みにブラウザ操作エージェントの機能を組み込みたいとき（例：クライアントの予約ページの空き状況を定期チェックする等）、確認フローやループ処理をゼロから書かずに、土台を使った実装をClaude Codeに頼みやすくなる。</p>
     </div>
-    <a class="source-link" href="https://prtimes.jp/main/html/rd/p/000000082.000165098.html" target="_blank" rel="noopener">
-      <span class="arrow">&#8599;</span> prtimes.jp/main/html/rd/p/000000082.000165098
+    <a class="source-link" href="https://platform.claude.com/docs/en/agents-and-tools/tool-use/browser-use-sdk" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> platform.claude.com/.../browser-use-sdk
     </a>
   </div>
 
   <div class="archive">
     <span class="archive-label">過去の週報</span>
     <ul>
+      <li><a href="weeks/2026-10-05.html">第9回（2026年9月28日〜10月5日）</a></li>
       <li><a href="weeks/2026-09-28.html">第8回（2026年9月22日〜9月28日）</a></li>
       <li><a href="weeks/2026-09-21.html">第7回（2026年9月15日〜9月21日）</a></li>
       <li><a href="weeks/2026-09-07.html">第6回（2026年9月1日〜9月7日）</a></li>
@@ -355,8 +356,8 @@
   </div>
 
   <footer>
-    AIニュース週報 第9回<br>
-    2026年9月28日〜10月5日分
+    AIニュース週報 第10回<br>
+    2026年10月5日〜10月12日分
   </footer>
 
 </div>

@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-05",
+  "date": "2026-10-12",
   "count": 4,
-  "url": "https://nynyzeni-dot.github.io/ai-news-weekly/weeks/2026-10-05.html",
+  "url": "https://nynyzeni-dot.github.io/ai-news-weekly/weeks/2026-10-12.html",
   "items": [
-    {"title": "Claude新モデル「Sonnet 5.5」、3割速く・安く", "why": "Claude Codeで普段の実装作業に使うと、料金はそのままで3割速く・安く回せるようになる", "url": "https://www.anthropic.com/claude-sonnet-5-5"},
-    {"title": "higgsfield「Ads Studio」、物販広告を自動量産", "why": "クライアントの美容室の物販商品の宣伝画像を、商品写真1枚から何パターンも量産できるようになる", "url": "https://higgsfield.ai/blog/higgsfield-ads-studio"},
-    {"title": "Claude Codeを自分で改造できる「mods」登場", "why": "本番コマンド実行前に確認を必須にするmodを入れれば、VPSやLINE Botの本番を誤って壊す事故を防げるようになる", "url": "https://claude.com/blog/claude-code-mods"},
-    {"title": "MEO対策「口コミロボ」、Instagram連携開始", "why": "クライアントの美容室グループがInstagramに投稿した内容を、そのままGoogleマップの集客にも使い回せるようになる", "url": "https://prtimes.jp/main/html/rd/p/000000082.000165098.html"}
+    {"title": "Claude新モデル「Haiku 5.5」、激安・高速に", "why": "Claude Codeのサブエージェントに使えば、議事録要約やアンケート分類みたいな軽い作業を安く・速く回せるようになる", "url": "https://www.anthropic.com/claude-haiku-5-5"},
+    {"title": "higgsfield、広告動画を複数パターン量産", "why": "クライアント美容室の物販動画広告を1本から、商品やモデル・訴求文言を変えた複数パターンに量産できるようになる", "url": "https://higgsfield.ai/blog/ad-multiplier-ads-studio"},
+    {"title": "higgsfield、画像モデルが4K対応に進化", "why": "いつものhiggsfieldで顧客向け資料やLPの画像を、文字入りでも読みやすく・高解像度で作れるようになる", "url": "https://higgsfield.ai/nano-banana-2-1-intro"},
+    {"title": "Claude API、ブラウザ操作ツールが標準搭載", "why": "自作のFastAPIアプリやVPSの仕組みにブラウザ操作エージェントを組み込みやすくなる", "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/browser-use-sdk"}
   ]
 }
