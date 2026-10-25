@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>AIニュース週報 第10回｜2026.10.5-10.12</title>
+<title>AIニュース週報 第11回｜2026.10.19-10.26</title>
 <style>
   :root {
     --main: #D4722A;
@@ -199,16 +199,6 @@
     flex-shrink: 0;
   }
 
-  footer {
-    text-align: center;
-    margin-top: 32px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
-    font-size: 11.5px;
-    color: var(--text-faint);
-    line-height: 1.8;
-  }
-
   /* 過去回リンク */
   .archive {
     margin-top: 32px;
@@ -241,6 +231,16 @@
     color: var(--main);
   }
 
+  footer {
+    text-align: center;
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 11.5px;
+    color: var(--text-faint);
+    line-height: 1.8;
+  }
+
   @media (min-width: 480px) {
     h1 { font-size: 24px; }
   }
@@ -250,33 +250,33 @@
 <div class="wrap">
 
   <header>
-    <span class="kicker">AIニュース週報 ／ 第10回</span>
-    <h1>今週のAI動向<br><span class="accent">2026年10月5日〜10月12日</span></h1>
-    <p class="period">全4件・重要度高2件／中2件</p>
+    <span class="kicker">AIニュース週報 ／ 第11回</span>
+    <h1>今週のAI動向<br><span class="accent">2026年10月19日〜10月26日</span></h1>
+    <p class="period">全3件・重要度高2件／中1件</p>
   </header>
 
   <div class="summary-box">
     <span class="label">今週の一言まとめ</span>
-    <p>今週はAnthropicの新しい小型モデルHaiku 5.5が出て、議事録の要約みたいな軽い繰り返し作業がますます安う回せるようになった週やった。higgsfieldの方はAd Multiplierで物販の動画広告をバリエーション量産できるようになったし、画像モデルも4K対応で画質が上がったで。ブラウザ操作エージェントの土台もSDKに標準で入って、自作アプリに組み込みやすなったな。</p>
+    <p>今週はNotionのAIエージェントが「Auto」というモデル自動振り分けで一気に安くなって、自分のChatGPT契約もそのまま繋いで使い回せるようになった週やった。higgsfieldの方は「もし〜やったら」の一言から声入りの短尺動画をポンと作れるContent Factoryが出て、漫画リールのネタ切れ対策に使えそうやな。Claude Codeの/auto-mode-setupは地味やけど、VPSの権限設定を手探りでやる手間が減るんは地味に助かるで。</p>
   </div>
 
   <!-- 1: 高 -->
   <div class="card high">
     <div class="badge-row">
       <span class="badge high">重要度：高</span>
-      <span class="date">2026-10-07</span>
+      <span class="date">2026-10-19</span>
     </div>
-    <h2>Claude新モデル「Haiku 5.5」、激安・高速に</h2>
+    <h2>NotionのAIエージェント、安く・自前AIも繋げる刷新</h2>
     <div class="block">
       <p class="h">何があったか</p>
-      <p>10月7日、Anthropicが小型モデル「Claude Haiku 5.5」（＝Opus・Sonnetより軽量で、大量の作業を低コストでこなすためのモデルのこと）をリリースした。100万トークンのコンテキストウィンドウを持ち、要約・分類・データベース照会といった反復作業向けに最適化されている。料金は10万トークンまでの入力が100万トークンあたり0.10ドルで、前のHaikuモデルより大幅に安い。Claude Codeのコーディング作業でOpus・Sonnetと組み合わせる「サブエージェント」用のモデルとしても使える。</p>
+      <p>10月19日、Notionが「Notion Agent」を大幅刷新した。依頼内容ごとに適したAIモデルを自動で選ぶ「Auto」（＝モデル自動振り分け機能のこと）を追加し、20以上の作業で検証した結果、Opus 5.5やAstraと同等の結果を平均9割安いコストで出せるとしている。さらに、自分が契約しているChatGPT Plus・Pro・Goのアカウントを個人のNotion Agentに接続できる「Bring your own AI」も追加され、接続した分の作業はNotion側のクレジットを使わずに済む。Business・Enterprise向けには月1,500クレジット（Standard）＋500クレジット（Select）の新クレジット制も導入される（既存ユーザーへの切り替えは11月2日）。</p>
     </div>
     <div class="block">
       <p class="h">何ができるようになるか</p>
-      <p>Claude Codeで自作のLINE Bot・FastAPIアプリを触っているとき、議事録の要約やアンケート自由記述の分類のような軽い繰り返し作業をサブエージェントにHaiku 5.5で任せれば、Opus・Sonnetだけで回すより安く・速く済ませられるようになる。</p>
+      <p>普段Notionで議事録を整理したり顧客向け資料のドラフトをNotion Agentに頼んでいる作業が、Autoへの切り替えだけでコストを気にせず回せるようになる。すでに契約しているChatGPT Plusを「Bring your own AI」で繋げば、その分の作業はNotion側のクレジットを消費せずに済むようにもなる。</p>
     </div>
-    <a class="source-link" href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">
-      <span class="arrow">&#8599;</span> anthropic.com/claude-haiku-5-5
+    <a class="source-link" href="https://www.notion.com/blog/notion-ai-more-for-less" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> notion.com/blog/notion-ai-more-for-less
     </a>
   </div>
 
@@ -284,19 +284,19 @@
   <div class="card high">
     <div class="badge-row">
       <span class="badge high">重要度：高</span>
-      <span class="date">2026-10-06</span>
+      <span class="date">2026-10-22</span>
     </div>
-    <h2>higgsfield、広告動画を複数パターン量産</h2>
+    <h2>higgsfield、「もし〜やったら」から動画を自動生成</h2>
     <div class="block">
       <p class="h">何があったか</p>
-      <p>10月6日、画像・動画生成AI「higgsfield」がAds Studio内に新ツール「Ad Multiplier」を追加した。すでにある動画広告1本を参考に、登場人物・商品・場所だけを指定の素材に入れ替えて、フックやCTA（＝「今すぐ予約」のような行動喚起の文言のこと）を変えた複数パターンを一度に作れる。元動画の構図・カット・タイミングはそのまま保たれる。参考動画は4〜30秒、画像は最大20枚まで指定でき、ClaudeなどのAIアシスタントから直接呼び出せる連携の仕組み「Higgsfield MCP」のスキルとしても使える。</p>
+      <p>10月22日、画像・動画生成AI「higgsfield」が新ツール「Content Factory」を公開した。「もし〜やったら」という一問を入れるだけで、台本作成・キャラクター選定・場面生成・ナレーションまでを自動でこなし、顔出し無しの短尺動画（15秒〜5分・1〜4話）に仕上げる。50種類以上の出来上がり形式（プリセット）から選べるほか、TikTok・Instagramの既存動画をリンクで渡して構成やペースだけ参考にすることもできる（セリフ・ストーリー・キャラクターそのものはコピーしない仕組み）。higgsfield本体の画面だけでなく、Claude経由（Higgsfield MCP、「/content-factory」）でも呼び出せ、その場合は縦9:16でInstagramリール・TikTok・YouTubeショート向けの仕上がりになる。料金はPlusプラン（月49ドル・1,000クレジット）基準で、15秒1話が約0.79ドル、1分4話で約12.6ドルなど。</p>
     </div>
     <div class="block">
       <p class="h">何ができるようになるか</p>
-      <p>クライアントの美容室グループの物販動画広告を1本作れば、商品やモデルだけ入れ替えつつ訴求文言（フック・CTA）を変えたパターンをAd Multiplierでまとめて量産できるようになり、物販の販促提案の幅を広げられる。</p>
+      <p>主力の漫画リールのネタに詰まったとき、「もし〜やったら」という設定だけ入れればセリフ・BGM入りの短尺動画をhiggsfield（Claude経由も可）で自動生成できるようになり、漫画リールとは別の企画パターンとして今日から試せる。</p>
     </div>
-    <a class="source-link" href="https://higgsfield.ai/blog/ad-multiplier-ads-studio" target="_blank" rel="noopener">
-      <span class="arrow">&#8599;</span> higgsfield.ai/blog/ad-multiplier-ads-studio
+    <a class="source-link" href="https://higgsfield.ai/blog/higgsfield-introduces-content-factory" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> higgsfield.ai/blog/higgsfield-introduces-content-factory
     </a>
   </div>
 
@@ -304,45 +304,26 @@
   <div class="card mid">
     <div class="badge-row">
       <span class="badge mid">重要度：中</span>
-      <span class="date">2026-10-06</span>
+      <span class="date">2026-10-19</span>
     </div>
-    <h2>higgsfield、画像モデルが4K対応に進化</h2>
+    <h2>Claude Code、Autoモードの初期設定を自動化する新コマンド</h2>
     <div class="block">
       <p class="h">何があったか</p>
-      <p>10月6日、higgsfieldにGoogleの最新画像生成モデル「Nano Banana 2.1」が追加された。出力解像度を最大4Kまで選べるようになり、最大14枚の参照画像を使って人物の顔や商品を最大40枚のバッチで一貫して描ける。画像内の文字も翻訳込みで読みやすく描けるようになり、チャットで「この部分だけ直して」と頼む部分編集にも対応する。</p>
+      <p>10月19日、Claude Codeにガイド付きセットアップコマンド「/auto-mode-setup」が追加された。Autoモード（＝Claudeが権限の許可・拒否を自分で判断しながら作業を進める動作モードのこと。今年7月から全ユーザー向けに提供されている）について、実行すると今触っているプロジェクトと直近の作業履歴を読み込んで、その環境に合わせた設定をガイド形式で教え込んでくれる。</p>
     </div>
     <div class="block">
       <p class="h">何ができるようになるか</p>
-      <p>いつものhiggsfieldでモデルをNano Banana 2.1に切り替えれば、顧客向け資料やLPに使う画像を、文字入りでも読みやすく・高解像度で作れるようになり、LP制作や資料の図版づくりの質を上げられる。</p>
+      <p>VPS上のLINE Bot・FastAPIアプリをClaude Codeに任せるとき、毎回自分で許可・拒否のルールを手探りで書く代わりに、/auto-mode-setupを一度走らせれば今のプロジェクトに合わせた設定の土台を作ってもらえるようになる。</p>
     </div>
-    <a class="source-link" href="https://higgsfield.ai/nano-banana-2-1-intro" target="_blank" rel="noopener">
-      <span class="arrow">&#8599;</span> higgsfield.ai/nano-banana-2-1-intro
-    </a>
-  </div>
-
-  <!-- 4: 中 -->
-  <div class="card mid">
-    <div class="badge-row">
-      <span class="badge mid">重要度：中</span>
-      <span class="date">2026-10-07</span>
-    </div>
-    <h2>Claude API、ブラウザ操作ツールが標準搭載</h2>
-    <div class="block">
-      <p class="h">何があったか</p>
-      <p>10月7日、AnthropicがPython・TypeScript向けSDKに、ブラウザ操作・PC操作をClaudeにやらせるための標準クラス（ベータ版）を追加した。これまでは呼び出しのループ処理や、URL・ファイルの許可範囲、実行前の確認フローを自分で全部書く必要があったが、新しいクラスを使えば「クリックする」「入力する」といった操作を1メソッドずつ実装するだけで、ループ処理と確認フローの土台はSDK側が担ってくれる。</p>
-    </div>
-    <div class="block">
-      <p class="h">何ができるようになるか</p>
-      <p>Claude Code任せではなく自分のFastAPIアプリやVPS上の仕組みにブラウザ操作エージェントの機能を組み込みたいとき（例：クライアントの予約ページの空き状況を定期チェックする等）、確認フローやループ処理をゼロから書かずに、土台を使った実装をClaude Codeに頼みやすくなる。</p>
-    </div>
-    <a class="source-link" href="https://platform.claude.com/docs/en/agents-and-tools/tool-use/browser-use-sdk" target="_blank" rel="noopener">
-      <span class="arrow">&#8599;</span> platform.claude.com/.../browser-use-sdk
+    <a class="source-link" href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> code.claude.com/docs/en/changelog
     </a>
   </div>
 
   <div class="archive">
     <span class="archive-label">過去の週報</span>
     <ul>
+      <li><a href="weeks/2026-10-12.html">第10回（2026年10月5日〜10月12日）</a></li>
       <li><a href="weeks/2026-10-05.html">第9回（2026年9月28日〜10月5日）</a></li>
       <li><a href="weeks/2026-09-28.html">第8回（2026年9月22日〜9月28日）</a></li>
       <li><a href="weeks/2026-09-21.html">第7回（2026年9月15日〜9月21日）</a></li>
@@ -356,8 +337,8 @@
   </div>
 
   <footer>
-    AIニュース週報 第10回<br>
-    2026年10月5日〜10月12日分
+    AIニュース週報 第11回<br>
+    2026年10月19日〜10月26日分
   </footer>
 
 </div>

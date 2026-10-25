@@ -1,5 +1,10 @@
 {
-  "date": "2026-10-19",
-  "count": 0,
-  "items": []
+  "date": "2026-10-26",
+  "count": 3,
+  "url": "https://nynyzeni-dot.github.io/ai-news-weekly/weeks/2026-10-26.html",
+  "items": [
+    {"title": "NotionのAIエージェント、安く・自前AIも繋げる刷新", "why": "議事録整理や顧客向け資料のドラフトをNotion Agentに頼む作業が、Autoへの切り替えとChatGPT Plus連携でコストを気にせず回せるようになる", "url": "https://www.notion.com/blog/notion-ai-more-for-less"},
+    {"title": "higgsfield、「もし〜やったら」から動画を自動生成", "why": "漫画リールのネタに詰まったとき、一言の設定だけで声・BGM入りの短尺動画を自動生成でき、新しい企画パターンとして今日から試せる", "url": "https://higgsfield.ai/blog/higgsfield-introduces-content-factory"},
+    {"title": "Claude Code、Autoモードの初期設定を自動化する新コマンド", "why": "VPS上のLINE Bot・FastAPIアプリの権限設定を手探りで書く代わりに、/auto-mode-setupで今のプロジェクトに合わせた設定の土台を作ってもらえる", "url": "https://code.claude.com/docs/en/changelog"}
+  ]
 }

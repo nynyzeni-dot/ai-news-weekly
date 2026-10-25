@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>AIニュース週報 第11回｜2026.10.19-10.26</title>
+<style>
+  :root {
+    --main: #D4722A;
+    --sub: #C25F18;
+    --accent: #F5C28A;
+    --text-brand: #A85513;
+    --bg: #FDFAF5;
+    --bg-card: #FFFFFF;
+    --bg-card2: #F7F1E8;
+    --border: #E5DACB;
+    --text: #3A3229;
+    --text-dim: #6B6157;
+    --text-faint: #938779;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  img, svg { max-width: 100%; }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 20px 16px 56px;
+    width: 100%;
+  }
+
+  /* ヘッダー */
+  header {
+    padding: 4px 0 20px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 22px;
+  }
+  .kicker {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #1A0F06;
+    background: linear-gradient(135deg, var(--main), var(--sub));
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin: 0 0 8px;
+    color: var(--text);
+    font-weight: 800;
+  }
+  h1 .accent { color: var(--text-brand); }
+  .period {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin: 0;
+  }
+
+  /* 今週の一言まとめ */
+  .summary-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--sub);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 28px;
+    box-shadow: 0 1px 3px rgba(58,50,41,.08);
+  }
+  .summary-box .label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-brand);
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+    display: block;
+  }
+  .summary-box p {
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 1.85;
+    color: var(--text);
+  }
+
+  /* セクション見出し（一覧） */
+  .toc {
+    font-size: 12px;
+    color: var(--text-faint);
+    margin: 0 0 24px;
+    line-height: 1.6;
+  }
+
+  /* カード */
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 16px;
+    margin-bottom: 18px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(58,50,41,.08);
+  }
+  .card.high {
+    border-left: 4px solid var(--main);
+    background: var(--bg-card2);
+  }
+  .card.mid {
+    border-left: 4px solid var(--border);
+  }
+
+  .badge-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 20px;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+  }
+  .badge.high {
+    background: var(--main);
+    color: #1A0F06;
+  }
+  .badge.mid {
+    background: transparent;
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+  }
+  .date {
+    font-size: 11px;
+    color: var(--text-faint);
+  }
+
+  .card h2 {
+    font-size: 16.5px;
+    line-height: 1.5;
+    margin: 0 0 14px;
+    color: var(--text);
+    font-weight: 700;
+  }
+
+  .block {
+    margin-bottom: 12px;
+  }
+  .block:last-of-type {
+    margin-bottom: 14px;
+  }
+  .block .h {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--text-brand);
+    margin: 0 0 5px;
+    letter-spacing: 0.03em;
+  }
+  .card.mid .block .h {
+    color: var(--text-brand);
+  }
+  .block p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text-dim);
+  }
+
+  .source-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12.5px;
+    color: var(--text-brand);
+    text-decoration: underline;
+    border-top: 1px solid var(--border);
+    padding-top: 10px;
+    margin-top: 4px;
+    word-break: break-all;
+  }
+  .source-link:active,
+  .source-link:hover {
+    color: var(--main);
+  }
+  .source-link .arrow {
+    flex-shrink: 0;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 11.5px;
+    color: var(--text-faint);
+    line-height: 1.8;
+  }
+
+  @media (min-width: 480px) {
+    h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="kicker">AIニュース週報 ／ 第11回</span>
+    <h1>今週のAI動向<br><span class="accent">2026年10月19日〜10月26日</span></h1>
+    <p class="period">全3件・重要度高2件／中1件</p>
+  </header>
+
+  <div class="summary-box">
+    <span class="label">今週の一言まとめ</span>
+    <p>今週はNotionのAIエージェントが「Auto」というモデル自動振り分けで一気に安くなって、自分のChatGPT契約もそのまま繋いで使い回せるようになった週やった。higgsfieldの方は「もし〜やったら」の一言から声入りの短尺動画をポンと作れるContent Factoryが出て、漫画リールのネタ切れ対策に使えそうやな。Claude Codeの/auto-mode-setupは地味やけど、VPSの権限設定を手探りでやる手間が減るんは地味に助かるで。</p>
+  </div>
+
+  <!-- 1: 高 -->
+  <div class="card high">
+    <div class="badge-row">
+      <span class="badge high">重要度：高</span>
+      <span class="date">2026-10-19</span>
+    </div>
+    <h2>NotionのAIエージェント、安く・自前AIも繋げる刷新</h2>
+    <div class="block">
+      <p class="h">何があったか</p>
+      <p>10月19日、Notionが「Notion Agent」を大幅刷新した。依頼内容ごとに適したAIモデルを自動で選ぶ「Auto」（＝モデル自動振り分け機能のこと）を追加し、20以上の作業で検証した結果、Opus 5.5やAstraと同等の結果を平均9割安いコストで出せるとしている。さらに、自分が契約しているChatGPT Plus・Pro・Goのアカウントを個人のNotion Agentに接続できる「Bring your own AI」も追加され、接続した分の作業はNotion側のクレジットを使わずに済む。Business・Enterprise向けには月1,500クレジット（Standard）＋500クレジット（Select）の新クレジット制も導入される（既存ユーザーへの切り替えは11月2日）。</p>
+    </div>
+    <div class="block">
+      <p class="h">何ができるようになるか</p>
+      <p>普段Notionで議事録を整理したり顧客向け資料のドラフトをNotion Agentに頼んでいる作業が、Autoへの切り替えだけでコストを気にせず回せるようになる。すでに契約しているChatGPT Plusを「Bring your own AI」で繋げば、その分の作業はNotion側のクレジットを消費せずに済むようにもなる。</p>
+    </div>
+    <a class="source-link" href="https://www.notion.com/blog/notion-ai-more-for-less" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> notion.com/blog/notion-ai-more-for-less
+    </a>
+  </div>
+
+  <!-- 2: 高 -->
+  <div class="card high">
+    <div class="badge-row">
+      <span class="badge high">重要度：高</span>
+      <span class="date">2026-10-22</span>
+    </div>
+    <h2>higgsfield、「もし〜やったら」から動画を自動生成</h2>
+    <div class="block">
+      <p class="h">何があったか</p>
+      <p>10月22日、画像・動画生成AI「higgsfield」が新ツール「Content Factory」を公開した。「もし〜やったら」という一問を入れるだけで、台本作成・キャラクター選定・場面生成・ナレーションまでを自動でこなし、顔出し無しの短尺動画（15秒〜5分・1〜4話）に仕上げる。50種類以上の出来上がり形式（プリセット）から選べるほか、TikTok・Instagramの既存動画をリンクで渡して構成やペースだけ参考にすることもできる（セリフ・ストーリー・キャラクターそのものはコピーしない仕組み）。higgsfield本体の画面だけでなく、Claude経由（Higgsfield MCP、「/content-factory」）でも呼び出せ、その場合は縦9:16でInstagramリール・TikTok・YouTubeショート向けの仕上がりになる。料金はPlusプラン（月49ドル・1,000クレジット）基準で、15秒1話が約0.79ドル、1分4話で約12.6ドルなど。</p>
+    </div>
+    <div class="block">
+      <p class="h">何ができるようになるか</p>
+      <p>主力の漫画リールのネタに詰まったとき、「もし〜やったら」という設定だけ入れればセリフ・BGM入りの短尺動画をhiggsfield（Claude経由も可）で自動生成できるようになり、漫画リールとは別の企画パターンとして今日から試せる。</p>
+    </div>
+    <a class="source-link" href="https://higgsfield.ai/blog/higgsfield-introduces-content-factory" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> higgsfield.ai/blog/higgsfield-introduces-content-factory
+    </a>
+  </div>
+
+  <!-- 3: 中 -->
+  <div class="card mid">
+    <div class="badge-row">
+      <span class="badge mid">重要度：中</span>
+      <span class="date">2026-10-19</span>
+    </div>
+    <h2>Claude Code、Autoモードの初期設定を自動化する新コマンド</h2>
+    <div class="block">
+      <p class="h">何があったか</p>
+      <p>10月19日、Claude Codeにガイド付きセットアップコマンド「/auto-mode-setup」が追加された。Autoモード（＝Claudeが権限の許可・拒否を自分で判断しながら作業を進める動作モードのこと。今年7月から全ユーザー向けに提供されている）について、実行すると今触っているプロジェクトと直近の作業履歴を読み込んで、その環境に合わせた設定をガイド形式で教え込んでくれる。</p>
+    </div>
+    <div class="block">
+      <p class="h">何ができるようになるか</p>
+      <p>VPS上のLINE Bot・FastAPIアプリをClaude Codeに任せるとき、毎回自分で許可・拒否のルールを手探りで書く代わりに、/auto-mode-setupを一度走らせれば今のプロジェクトに合わせた設定の土台を作ってもらえるようになる。</p>
+    </div>
+    <a class="source-link" href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> code.claude.com/docs/en/changelog
+    </a>
+  </div>
+
+  <footer>
+    AIニュース週報 第11回<br>
+    2026年10月19日〜10月26日分
+  </footer>
+
+</div>
+</body>
+</html>
