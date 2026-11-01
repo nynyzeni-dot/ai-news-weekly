@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>AIニュース週報 第11回｜2026.10.19-10.26</title>
+<title>AIニュース週報 第12回｜2026.10.26-11.02</title>
 <style>
   :root {
     --main: #D4722A;
@@ -250,53 +250,53 @@
 <div class="wrap">
 
   <header>
-    <span class="kicker">AIニュース週報 ／ 第11回</span>
-    <h1>今週のAI動向<br><span class="accent">2026年10月19日〜10月26日</span></h1>
-    <p class="period">全3件・重要度高2件／中1件</p>
+    <span class="kicker">AIニュース週報 ／ 第12回</span>
+    <h1>今週のAI動向<br><span class="accent">2026年10月26日〜11月2日</span></h1>
+    <p class="period">全3件・重要度高1件／中2件</p>
   </header>
 
   <div class="summary-box">
     <span class="label">今週の一言まとめ</span>
-    <p>今週はNotionのAIエージェントが「Auto」というモデル自動振り分けで一気に安くなって、自分のChatGPT契約もそのまま繋いで使い回せるようになった週やった。higgsfieldの方は「もし〜やったら」の一言から声入りの短尺動画をポンと作れるContent Factoryが出て、漫画リールのネタ切れ対策に使えそうやな。Claude Codeの/auto-mode-setupは地味やけど、VPSの権限設定を手探りでやる手間が減るんは地味に助かるで。</p>
+    <p>今週はClaude Codeの地味な中身の調整が中心やったな。「ultrathink」がどのモデルでもガッと深く考えてくれるようになったんは、VPSのバグ直しで地味に効くで。グラフも円グラフ卒業してランキング棒グラフになったんは、アンケート資料をそのまま使えて助かるわ。</p>
   </div>
 
   <!-- 1: 高 -->
   <div class="card high">
     <div class="badge-row">
       <span class="badge high">重要度：高</span>
-      <span class="date">2026-10-19</span>
+      <span class="date">2026-10-26</span>
     </div>
-    <h2>NotionのAIエージェント、安く・自前AIも繋げる刷新</h2>
+    <h2>Claude Codeの「ultrathink」、全モデルで深く考えるように</h2>
     <div class="block">
       <p class="h">何があったか</p>
-      <p>10月19日、Notionが「Notion Agent」を大幅刷新した。依頼内容ごとに適したAIモデルを自動で選ぶ「Auto」（＝モデル自動振り分け機能のこと）を追加し、20以上の作業で検証した結果、Opus 5.5やAstraと同等の結果を平均9割安いコストで出せるとしている。さらに、自分が契約しているChatGPT Plus・Pro・Goのアカウントを個人のNotion Agentに接続できる「Bring your own AI」も追加され、接続した分の作業はNotion側のクレジットを使わずに済む。Business・Enterprise向けには月1,500クレジット（Standard）＋500クレジット（Select）の新クレジット制も導入される（既存ユーザーへの切り替えは11月2日）。</p>
+      <p>10月26日、Claude Codeのターミナルで使う合言葉「ultrathink」（＝打つと普段より深く考えてから答えさせるキーワードのこと）が、Opus 5.5・Sonnet 5.5・Haiku 5.5・Fable 5.1のどのモデルを使っていても「xhigh」という最も深い思考レベルで動くように変わった。作業の途中でこの言葉を打った場合は、そこから残りのやり取りの思考レベルが上がる。</p>
     </div>
     <div class="block">
       <p class="h">何ができるようになるか</p>
-      <p>普段Notionで議事録を整理したり顧客向け資料のドラフトをNotion Agentに頼んでいる作業が、Autoへの切り替えだけでコストを気にせず回せるようになる。すでに契約しているChatGPT Plusを「Bring your own AI」で繋げば、その分の作業はNotion側のクレジットを消費せずに済むようにもなる。</p>
+      <p>VPS上のFastAPIアプリやLINE Botのバグ調整、込み入った実装をClaude Codeに頼むとき、詰まった場面で「ultrathink」と打つだけで、使っているモデルを問わず今までよりしっかり考えてから答えてくれるようになる。</p>
     </div>
-    <a class="source-link" href="https://www.notion.com/blog/notion-ai-more-for-less" target="_blank" rel="noopener">
-      <span class="arrow">&#8599;</span> notion.com/blog/notion-ai-more-for-less
+    <a class="source-link" href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> code.claude.com/docs/en/changelog
     </a>
   </div>
 
-  <!-- 2: 高 -->
-  <div class="card high">
+  <!-- 2: 中 -->
+  <div class="card mid">
     <div class="badge-row">
-      <span class="badge high">重要度：高</span>
-      <span class="date">2026-10-22</span>
+      <span class="badge mid">重要度：中</span>
+      <span class="date">2026-10-27</span>
     </div>
-    <h2>higgsfield、「もし〜やったら」から動画を自動生成</h2>
+    <h2>クラウドの自動タスク、思考の強さを選べるように</h2>
     <div class="block">
       <p class="h">何があったか</p>
-      <p>10月22日、画像・動画生成AI「higgsfield」が新ツール「Content Factory」を公開した。「もし〜やったら」という一問を入れるだけで、台本作成・キャラクター選定・場面生成・ナレーションまでを自動でこなし、顔出し無しの短尺動画（15秒〜5分・1〜4話）に仕上げる。50種類以上の出来上がり形式（プリセット）から選べるほか、TikTok・Instagramの既存動画をリンクで渡して構成やペースだけ参考にすることもできる（セリフ・ストーリー・キャラクターそのものはコピーしない仕組み）。higgsfield本体の画面だけでなく、Claude経由（Higgsfield MCP、「/content-factory」）でも呼び出せ、その場合は縦9:16でInstagramリール・TikTok・YouTubeショート向けの仕上がりになる。料金はPlusプラン（月49ドル・1,000クレジット）基準で、15秒1話が約0.79ドル、1分4話で約12.6ドルなど。</p>
+      <p>10月27日、クラウド上で動くClaude Codeの「ルーティン」（＝スケジュールを決めて自動実行させるタスクのこと。この週報もこの仕組みで毎週動いている）を作る・編集する画面のモデル選択に、エフォートレベル（＝思考の強さの指定のこと）の項目が追加された。</p>
     </div>
     <div class="block">
       <p class="h">何ができるようになるか</p>
-      <p>主力の漫画リールのネタに詰まったとき、「もし〜やったら」という設定だけ入れればセリフ・BGM入りの短尺動画をhiggsfield（Claude経由も可）で自動生成できるようになり、漫画リールとは別の企画パターンとして今日から試せる。</p>
+      <p>この週報のように毎週自動で走らせているルーティンや、これから組む自動タスクで、仕事の重さに応じて思考の強さを自分で選べるようになる。軽い確認作業は軽めに、込み入った判断が要る作業は深めに、とタスクごとに調整できるようになる。</p>
     </div>
-    <a class="source-link" href="https://higgsfield.ai/blog/higgsfield-introduces-content-factory" target="_blank" rel="noopener">
-      <span class="arrow">&#8599;</span> higgsfield.ai/blog/higgsfield-introduces-content-factory
+    <a class="source-link" href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> code.claude.com/docs/en/changelog
     </a>
   </div>
 
@@ -304,16 +304,16 @@
   <div class="card mid">
     <div class="badge-row">
       <span class="badge mid">重要度：中</span>
-      <span class="date">2026-10-19</span>
+      <span class="date">2026-10-30</span>
     </div>
-    <h2>Claude Code、Autoモードの初期設定を自動化する新コマンド</h2>
+    <h2>Claudeのグラフ提案、円グラフをやめてランキング棒グラフに</h2>
     <div class="block">
       <p class="h">何があったか</p>
-      <p>10月19日、Claude Codeにガイド付きセットアップコマンド「/auto-mode-setup」が追加された。Autoモード（＝Claudeが権限の許可・拒否を自分で判断しながら作業を進める動作モードのこと。今年7月から全ユーザー向けに提供されている）について、実行すると今触っているプロジェクトと直近の作業履歴を読み込んで、その環境に合わせた設定をガイド形式で教え込んでくれる。</p>
+      <p>10月30日、Claudeに標準で組み込まれているグラフ作成の指針（dataviz skill）が更新された。円グラフ・ドーナツグラフを頼んでも、値の数字が入ったランキング棒グラフ（または区切り入りの横棒グラフ）を提案するようになった。グラフの軸ラベルも、1万未満の数値は省略せず全桁で表示するよう改善されている。</p>
     </div>
     <div class="block">
       <p class="h">何ができるようになるか</p>
-      <p>VPS上のLINE Bot・FastAPIアプリをClaude Codeに任せるとき、毎回自分で許可・拒否のルールを手探りで書く代わりに、/auto-mode-setupを一度走らせれば今のプロジェクトに合わせた設定の土台を作ってもらえるようになる。</p>
+      <p>アンケート集計の結果や顧客向け資料のグラフをClaudeに作ってもらうとき、見た目だけの円グラフではなく数字がそのまま読めるランキング棒グラフを自動で出してくれるようになり、資料にそのまま使いやすくなる。</p>
     </div>
     <a class="source-link" href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">
       <span class="arrow">&#8599;</span> code.claude.com/docs/en/changelog
@@ -323,6 +323,7 @@
   <div class="archive">
     <span class="archive-label">過去の週報</span>
     <ul>
+      <li><a href="weeks/2026-10-26.html">第11回（2026年10月19日〜10月26日）</a></li>
       <li><a href="weeks/2026-10-12.html">第10回（2026年10月5日〜10月12日）</a></li>
       <li><a href="weeks/2026-10-05.html">第9回（2026年9月28日〜10月5日）</a></li>
       <li><a href="weeks/2026-09-28.html">第8回（2026年9月22日〜9月28日）</a></li>
@@ -337,8 +338,8 @@
   </div>
 
   <footer>
-    AIニュース週報 第11回<br>
-    2026年10月19日〜10月26日分
+    AIニュース週報 第12回<br>
+    2026年10月26日〜11月2日分
   </footer>
 
 </div>

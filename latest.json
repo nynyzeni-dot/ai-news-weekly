@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "count": 3,
-  "url": "https://nynyzeni-dot.github.io/ai-news-weekly/weeks/2026-10-26.html",
+  "url": "https://nynyzeni-dot.github.io/ai-news-weekly/weeks/2026-11-02.html",
   "items": [
-    {"title": "NotionのAIエージェント、安く・自前AIも繋げる刷新", "why": "議事録整理や顧客向け資料のドラフトをNotion Agentに頼む作業が、Autoへの切り替えとChatGPT Plus連携でコストを気にせず回せるようになる", "url": "https://www.notion.com/blog/notion-ai-more-for-less"},
-    {"title": "higgsfield、「もし〜やったら」から動画を自動生成", "why": "漫画リールのネタに詰まったとき、一言の設定だけで声・BGM入りの短尺動画を自動生成でき、新しい企画パターンとして今日から試せる", "url": "https://higgsfield.ai/blog/higgsfield-introduces-content-factory"},
-    {"title": "Claude Code、Autoモードの初期設定を自動化する新コマンド", "why": "VPS上のLINE Bot・FastAPIアプリの権限設定を手探りで書く代わりに、/auto-mode-setupで今のプロジェクトに合わせた設定の土台を作ってもらえる", "url": "https://code.claude.com/docs/en/changelog"}
+    {"title": "Claude Codeの「ultrathink」、全モデルで深く考えるように", "why": "VPSのFastAPIやLINE Botのバグ調整で詰まったとき、ultrathinkと打てばモデルを問わず今までより深く考えてから答えてくれるようになる", "url": "https://code.claude.com/docs/en/changelog"},
+    {"title": "クラウドの自動タスク、思考の強さを選べるように", "why": "この週報のように毎週走らせている自動タスク（ルーティン）で、仕事の重さに応じて思考の強さをタスクごとに選べるようになる", "url": "https://code.claude.com/docs/en/changelog"},
+    {"title": "Claudeのグラフ提案、円グラフをやめてランキング棒グラフに", "why": "アンケート集計や顧客向け資料のグラフを頼むと、円グラフではなく数字が読めるランキング棒グラフを自動で提案してくれるようになる", "url": "https://code.claude.com/docs/en/changelog"}
   ]
 }
