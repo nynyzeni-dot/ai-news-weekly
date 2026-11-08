@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>AIニュース週報 第12回｜2026.10.26-11.02</title>
+<title>AIニュース週報 第13回｜2026.11.2-11.9</title>
 <style>
   :root {
     --main: #D4722A;
@@ -250,53 +250,53 @@
 <div class="wrap">
 
   <header>
-    <span class="kicker">AIニュース週報 ／ 第12回</span>
-    <h1>今週のAI動向<br><span class="accent">2026年10月26日〜11月2日</span></h1>
-    <p class="period">全3件・重要度高1件／中2件</p>
+    <span class="kicker">AIニュース週報 ／ 第13回</span>
+    <h1>今週のAI動向<br><span class="accent">2026年11月2日〜11月9日</span></h1>
+    <p class="period">全4件・重要度高2件／中2件</p>
   </header>
 
   <div class="summary-box">
     <span class="label">今週の一言まとめ</span>
-    <p>今週はClaude Codeの地味な中身の調整が中心やったな。「ultrathink」がどのモデルでもガッと深く考えてくれるようになったんは、VPSのバグ直しで地味に効くで。グラフも円グラフ卒業してランキング棒グラフになったんは、アンケート資料をそのまま使えて助かるわ。</p>
+    <p>今週はhiggsfieldの「Mangaka」が一番の収穫やな。アイデア一行から漫画リールのパネルまで組んでくれるんは、ネタ切れのときの保険になるで。OpenAIのImages 2.6はCodexとChatGPT両方に来たから、note写真とゴリラ漫画の両方が速く・ブレんようになるのも地味に嬉しいとこや。</p>
   </div>
 
   <!-- 1: 高 -->
   <div class="card high">
     <div class="badge-row">
       <span class="badge high">重要度：高</span>
-      <span class="date">2026-10-26</span>
+      <span class="date">2026-11-03</span>
     </div>
-    <h2>Claude Codeの「ultrathink」、全モデルで深く考えるように</h2>
+    <h2>higgsfieldに漫画専用ツール「Mangaka」登場</h2>
     <div class="block">
       <p class="h">何があったか</p>
-      <p>10月26日、Claude Codeのターミナルで使う合言葉「ultrathink」（＝打つと普段より深く考えてから答えさせるキーワードのこと）が、Opus 5.5・Sonnet 5.5・Haiku 5.5・Fable 5.1のどのモデルを使っていても「xhigh」という最も深い思考レベルで動くように変わった。作業の途中でこの言葉を打った場合は、そこから残りのやり取りの思考レベルが上がる。</p>
+      <p>11月3日、画像・動画生成AI「higgsfield」が漫画制作ツール「Mangaka」（＝エージェント型のツールで、短いアイデアやPDF・DOCXの脚本からプロット・キャラクター・舞台を自動で組み立て、章ごとに漫画ページを描いてくれる機能のこと）を公開した。ページ比率は3:4・9:16・2:3から選べ、9:16はSNSやウェブトゥーン向けの縦型ページ。スタイルはモノクロ漫画・カラー漫画・コミック・ウェブトゥーンから選べる。キャラクターは写真＋名前＋短い説明で登録でき、一度承認した見た目は章をまたいで再利用される。完成物はPDF・CBZ・PNG・ウェブトゥーン形式で書き出せる。</p>
     </div>
     <div class="block">
       <p class="h">何ができるようになるか</p>
-      <p>VPS上のFastAPIアプリやLINE Botのバグ調整、込み入った実装をClaude Codeに頼むとき、詰まった場面で「ultrathink」と打つだけで、使っているモデルを問わず今までよりしっかり考えてから答えてくれるようになる。</p>
+      <p>主力の「漫画リール」のネタ作りで、アイデアを一行入れるだけでhiggsfieldのMangakaがプロットから漫画パネルまで自動で組んでくれるようになり、ネタ切れのときに試せる企画パターンが増える。</p>
     </div>
-    <a class="source-link" href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">
-      <span class="arrow">&#8599;</span> code.claude.com/docs/en/changelog
+    <a class="source-link" href="https://higgsfield.ai/blog/higgsfield-introduces-mangaka" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> higgsfield.ai/blog/higgsfield-introduces-mangaka
     </a>
   </div>
 
-  <!-- 2: 中 -->
-  <div class="card mid">
+  <!-- 2: 高 -->
+  <div class="card high">
     <div class="badge-row">
-      <span class="badge mid">重要度：中</span>
-      <span class="date">2026-10-27</span>
+      <span class="badge high">重要度：高</span>
+      <span class="date">2026-11-05</span>
     </div>
-    <h2>クラウドの自動タスク、思考の強さを選べるように</h2>
+    <h2>OpenAIの画像生成「Images 2.6」、速度とキャラ一貫性が向上</h2>
     <div class="block">
       <p class="h">何があったか</p>
-      <p>10月27日、クラウド上で動くClaude Codeの「ルーティン」（＝スケジュールを決めて自動実行させるタスクのこと。この週報もこの仕組みで毎週動いている）を作る・編集する画面のモデル選択に、エフォートレベル（＝思考の強さの指定のこと）の項目が追加された。</p>
+      <p>11月4〜5日、OpenAIが新しい画像生成・編集モデル「Images 2.6」（＝ChatGPT・Codex・APIの3つで使える、画像を作ったり直したりするためのモデルのこと）を公開した。生成速度が従来より50%速くなり、編集を繰り返してもキャラクター・商品・ブランドの特徴を保ちやすくなった。参照画像を保存しておいて、再アップロードせずに使い回すこともできる。ChatGPT・Codex・APIの全プランに展開されている。</p>
     </div>
     <div class="block">
       <p class="h">何ができるようになるか</p>
-      <p>この週報のように毎週自動で走らせているルーティンや、これから組む自動タスクで、仕事の重さに応じて思考の強さを自分で選べるようになる。軽い確認作業は軽めに、込み入った判断が要る作業は深めに、とタスクごとに調整できるようになる。</p>
+      <p>note本文の写真づくりに使っているCodex（gpt-image-2）と、ゴリラ漫画づくりに使っているChatGPTの両方で、画像の生成が速くなり、編集を重ねてもキャラクターや商品の見た目がブレにくくなる。</p>
     </div>
-    <a class="source-link" href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">
-      <span class="arrow">&#8599;</span> code.claude.com/docs/en/changelog
+    <a class="source-link" href="https://testingcatalog.com/openai-launches-images-2-6-with-gifs-and-image-reference" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> testingcatalog.com/openai-launches-images-2-6-with-gifs-and-image-reference
     </a>
   </div>
 
@@ -304,16 +304,36 @@
   <div class="card mid">
     <div class="badge-row">
       <span class="badge mid">重要度：中</span>
-      <span class="date">2026-10-30</span>
+      <span class="date">2026-11-06</span>
     </div>
-    <h2>Claudeのグラフ提案、円グラフをやめてランキング棒グラフに</h2>
+    <h2>higgsfield、物販向けのストーリー広告動画「Micro Drama Ads」</h2>
     <div class="block">
       <p class="h">何があったか</p>
-      <p>10月30日、Claudeに標準で組み込まれているグラフ作成の指針（dataviz skill）が更新された。円グラフ・ドーナツグラフを頼んでも、値の数字が入ったランキング棒グラフ（または区切り入りの横棒グラフ）を提案するようになった。グラフの軸ラベルも、1万未満の数値は省略せず全桁で表示するよう改善されている。</p>
+      <p>11月6日、higgsfieldのAds Studioに「Micro Drama Ads」（＝商品が物語の転機として登場する、ストーリー仕立ての動画広告を作るツールのこと）が追加された。サイトURLを登録すればブランドキットと商品を自動で取り込み、チャットでアイデアや脚本を伝えるだけで動画を作れる。実写風・3Dアニメ風・クレイアニメ風など8スタイルがあり、同じアバターを使って連続した広告も作れる。既定は縦型9:16で、Meta・TikTok・Instagramの広告向け。</p>
     </div>
     <div class="block">
       <p class="h">何ができるようになるか</p>
-      <p>アンケート集計の結果や顧客向け資料のグラフをClaudeに作ってもらうとき、見た目だけの円グラフではなく数字がそのまま読めるランキング棒グラフを自動で出してくれるようになり、資料にそのまま使いやすくなる。</p>
+      <p>クライアントの美容室が扱う店販商品（シャンプー・トリートメント等）の広告動画を、サイトURLと簡単な脚本だけでストーリー仕立てに仕立てて提案できるようになる。</p>
+    </div>
+    <a class="source-link" href="https://higgsfield.ai/blog/micro-drama-ads-higgsfield-ads-studio" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> higgsfield.ai/blog/micro-drama-ads-higgsfield-ads-studio
+    </a>
+  </div>
+
+  <!-- 4: 中 -->
+  <div class="card mid">
+    <div class="badge-row">
+      <span class="badge mid">重要度：中</span>
+      <span class="date">2026-11-06</span>
+    </div>
+    <h2>Claude Codeに「/claude-api latency-optimize」が追加</h2>
+    <div class="block">
+      <p class="h">何があったか</p>
+      <p>11月6日、Claude Codeに新コマンド「/claude-api latency-optimize」が追加された。自分が書いたClaude API（＝Claudeを自作アプリから呼び出す仕組みのこと）の実装のどこで時間がかかっているかを見つけ、速くするための設定を自分のeval（＝正しさを測る評価基準のこと）に対して自動でテストしてくれる。</p>
+    </div>
+    <div class="block">
+      <p class="h">何ができるようになるか</p>
+      <p>自作のFastAPIアプリやLINE BotでClaude APIを使っているとき、このコマンドを打つだけで遅くなっている場所を見つけて、速くするための設定を自動で試してもらえるようになる。</p>
     </div>
     <a class="source-link" href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">
       <span class="arrow">&#8599;</span> code.claude.com/docs/en/changelog
@@ -323,6 +343,7 @@
   <div class="archive">
     <span class="archive-label">過去の週報</span>
     <ul>
+      <li><a href="weeks/2026-11-02.html">第12回（2026年10月26日〜11月2日）</a></li>
       <li><a href="weeks/2026-10-26.html">第11回（2026年10月19日〜10月26日）</a></li>
       <li><a href="weeks/2026-10-12.html">第10回（2026年10月5日〜10月12日）</a></li>
       <li><a href="weeks/2026-10-05.html">第9回（2026年9月28日〜10月5日）</a></li>
@@ -338,8 +359,8 @@
   </div>
 
   <footer>
-    AIニュース週報 第12回<br>
-    2026年10月26日〜11月2日分
+    AIニュース週報 第13回<br>
+    2026年11月2日〜11月9日分
   </footer>
 
 </div>
