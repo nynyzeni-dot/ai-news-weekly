@@ -1,11 +1,10 @@
 {
-  "date": "2026-11-09",
-  "count": 4,
-  "url": "https://nynyzeni-dot.github.io/ai-news-weekly/weeks/2026-11-09.html",
+  "date": "2026-11-16",
+  "count": 3,
+  "url": "https://nynyzeni-dot.github.io/ai-news-weekly/weeks/2026-11-16.html",
   "items": [
-    {"title": "higgsfieldに漫画専用ツール「Mangaka」登場", "why": "アイデア一行から漫画リールのパネルまでhiggsfieldのMangakaが自動で組んでくれるようになり、ネタ切れ時の企画パターンが増える", "url": "https://higgsfield.ai/blog/higgsfield-introduces-mangaka"},
-    {"title": "OpenAIの画像生成「Images 2.6」、速度とキャラ一貫性が向上", "why": "note写真づくりのCodexとゴリラ漫画づくりのChatGPTの両方で、生成が速くなり編集してもキャラや商品の見た目がブレにくくなる", "url": "https://testingcatalog.com/openai-launches-images-2-6-with-gifs-and-image-reference"},
-    {"title": "higgsfield、物販向けのストーリー広告動画「Micro Drama Ads」", "why": "クライアントの美容室が扱う店販商品の広告動画を、サイトURLと簡単な脚本だけでストーリー仕立てに作って提案できるようになる", "url": "https://higgsfield.ai/blog/micro-drama-ads-higgsfield-ads-studio"},
-    {"title": "Claude Codeに「/claude-api latency-optimize」が追加", "why": "自作のFastAPIアプリやLINE BotでClaude APIを使うとき、遅い場所を見つけて速くする設定を自動でテストしてもらえるようになる", "url": "https://code.claude.com/docs/en/changelog"}
+    {"title": "Claude、表計算とダッシュボード機能を追加", "why": "アンケート集計や顧客向け資料の数字整理を、Claudeに頼んでその場でスプレッドシートを組んでもらえるようになる", "url": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors"},
+    {"title": "Claude Codeのsandbox、Bashの既定動作が変更", "why": "VPS上でAutoモード／sandboxで自動実行している場合、今後は権限確認が入って止まりうるので、止めたくなければ設定を自分で追加しておく必要がある", "url": "https://code.claude.com/docs/en/changelog"},
+    {"title": "自動実行タスク、skill使用時に確認が入るように", "why": "クラウドのルーティンや/loopでskillを使っていると確認待ちで止まる可能性があるので、無人運用を続けたいなら許可リストに追加しておく必要がある", "url": "https://code.claude.com/docs/en/changelog"}
   ]
 }

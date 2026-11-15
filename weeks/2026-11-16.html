@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>AIニュース週報 第14回｜2026.11.9-11.16</title>
+<style>
+  :root {
+    --main: #D4722A;
+    --sub: #C25F18;
+    --accent: #F5C28A;
+    --text-brand: #A85513;
+    --bg: #FDFAF5;
+    --bg-card: #FFFFFF;
+    --bg-card2: #F7F1E8;
+    --border: #E5DACB;
+    --text: #3A3229;
+    --text-dim: #6B6157;
+    --text-faint: #938779;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  img, svg { max-width: 100%; }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 20px 16px 56px;
+    width: 100%;
+  }
+
+  /* ヘッダー */
+  header {
+    padding: 4px 0 20px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 22px;
+  }
+  .kicker {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #1A0F06;
+    background: linear-gradient(135deg, var(--main), var(--sub));
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin: 0 0 8px;
+    color: var(--text);
+    font-weight: 800;
+  }
+  h1 .accent { color: var(--text-brand); }
+  .period {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin: 0;
+  }
+
+  /* 今週の一言まとめ */
+  .summary-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--sub);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 28px;
+    box-shadow: 0 1px 3px rgba(58,50,41,.08);
+  }
+  .summary-box .label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-brand);
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+    display: block;
+  }
+  .summary-box p {
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 1.85;
+    color: var(--text);
+  }
+
+  /* セクション見出し（一覧） */
+  .toc {
+    font-size: 12px;
+    color: var(--text-faint);
+    margin: 0 0 24px;
+    line-height: 1.6;
+  }
+
+  /* カード */
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 16px;
+    margin-bottom: 18px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(58,50,41,.08);
+  }
+  .card.high {
+    border-left: 4px solid var(--main);
+    background: var(--bg-card2);
+  }
+  .card.mid {
+    border-left: 4px solid var(--border);
+  }
+
+  .badge-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 20px;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+  }
+  .badge.high {
+    background: var(--main);
+    color: #1A0F06;
+  }
+  .badge.mid {
+    background: transparent;
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+  }
+  .date {
+    font-size: 11px;
+    color: var(--text-faint);
+  }
+
+  .card h2 {
+    font-size: 16.5px;
+    line-height: 1.5;
+    margin: 0 0 14px;
+    color: var(--text);
+    font-weight: 700;
+  }
+
+  .block {
+    margin-bottom: 12px;
+  }
+  .block:last-of-type {
+    margin-bottom: 14px;
+  }
+  .block .h {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--text-brand);
+    margin: 0 0 5px;
+    letter-spacing: 0.03em;
+  }
+  .card.mid .block .h {
+    color: var(--text-brand);
+  }
+  .block p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--text-dim);
+  }
+
+  .source-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12.5px;
+    color: var(--text-brand);
+    text-decoration: underline;
+    border-top: 1px solid var(--border);
+    padding-top: 10px;
+    margin-top: 4px;
+    word-break: break-all;
+  }
+  .source-link:active,
+  .source-link:hover {
+    color: var(--main);
+  }
+  .source-link .arrow {
+    flex-shrink: 0;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 11.5px;
+    color: var(--text-faint);
+    line-height: 1.8;
+  }
+
+  @media (min-width: 480px) {
+    h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="kicker">AIニュース週報 ／ 第14回</span>
+    <h1>今週のAI動向<br><span class="accent">2026年11月9日〜11月16日</span></h1>
+    <p class="period">全3件・重要度高1件／中2件</p>
+  </header>
+
+  <div class="summary-box">
+    <span class="label">今週の一言まとめ</span>
+    <p>今週はClaudeがSheetsとWhiteboardsを出して、ダッシュボードも「Claude Data」て名前になって、一気にオフィスソフトっぽい見た目になったんが一番の収穫やな。アンケート集計とか顧客向け資料の表計算を、Claudeとその場で組めるようになったんは普段の実務にそのまま効くで。Claude Code側はsandboxとルーティンの権限周りが地味に変わったから、VPSで放置運用してる人は設定だけ先に見といたほうがいいで。</p>
+  </div>
+
+  <!-- 1: 高 -->
+  <div class="card high">
+    <div class="badge-row">
+      <span class="badge high">重要度：高</span>
+      <span class="date">2026-11-10</span>
+    </div>
+    <h2>Claude、表計算とダッシュボード機能を追加</h2>
+    <div class="block">
+      <p class="h">何があったか</p>
+      <p>11月10日、AnthropicがClaudeに「Claude Sheets」（＝Claudeと一緒にスプレッドシートを作って編集できるベータ機能のこと。複数タブや数式に対応し、仕上がったファイルはワンクリックでExcel形式に書き出せる）と「Claude Whiteboards」（＝会議でアイデアを整理し、終わったらClaudeに要約してもらえるホワイトボード機能のこと）を追加した。合わせて、ダッシュボード機能「Claude Dashboards」も「Claude Data」という名前で正式提供になった。いずれも有料プランでWeb・デスクトップ・モバイルから使える。</p>
+    </div>
+    <div class="block">
+      <p class="h">何ができるようになるか</p>
+      <p>アンケート集計や顧客向け資料の数字整理を、Claudeに頼んでその場でスプレッドシートを組んでもらえるようになり、仕上がったらExcel形式に書き出す手間も一回で済むようになる。</p>
+    </div>
+    <a class="source-link" href="https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors
+    </a>
+  </div>
+
+  <!-- 2: 中 -->
+  <div class="card mid">
+    <div class="badge-row">
+      <span class="badge mid">重要度：中</span>
+      <span class="date">2026-11-13</span>
+    </div>
+    <h2>Claude Codeのsandbox、Bashの既定動作が変更</h2>
+    <div class="block">
+      <p class="h">何があったか</p>
+      <p>11月13日のClaude CodeアップデートでBashコマンド（＝ターミナルで実行する操作全般のこと）の扱いが変わった。sandbox機能（＝Claudeが使うコマンド実行を安全な範囲に閉じ込める仕組みのこと）の中でも、今後は既定で通常の権限確認を求められるようになる。確認なしで走らせ続けたい場合は、設定ファイルに`sandbox.autoAllowBashIfSandboxed: true`を自分で追加する必要がある。</p>
+    </div>
+    <div class="block">
+      <p class="h">何ができるようになるか</p>
+      <p>VPS上でClaude CodeのAutoモードやsandboxを使って自動でコマンドを走らせている場合、何もしないと今後は途中で権限確認が入って自動化が止まるようになるため、放置運用を続けたいなら上の設定を自分で追加しておく必要があると分かる。</p>
+    </div>
+    <a class="source-link" href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> code.claude.com/docs/en/changelog
+    </a>
+  </div>
+
+  <!-- 3: 中 -->
+  <div class="card mid">
+    <div class="badge-row">
+      <span class="badge mid">重要度：中</span>
+      <span class="date">2026-11-13</span>
+    </div>
+    <h2>自動実行タスク、skill使用時に確認が入るように</h2>
+    <div class="block">
+      <p class="h">何があったか</p>
+      <p>同じ11月13日のアップデートで、クラウドの「ルーティン」（＝スケジュールを決めて自動実行させるタスクのこと。この週報もこの仕組みで動いている）や`/loop`（＝一定間隔で繰り返し実行させる仕組みのこと）が、`allowed-tools`やhooksを宣言したskillを使う直前に確認を求めるよう変わった。無人のまま走らせ続けたい場合は、設定の`permissions.allow`に`Skill(スキル名)`を追加しておく必要がある。</p>
+    </div>
+    <div class="block">
+      <p class="h">何ができるようになるか</p>
+      <p>この週報のように毎週無人で動かしているクラウドのルーティンや、LINE Bot関連で組んでいる`/loop`の自動タスクでskillを使っていると、今後は確認待ちで止まる可能性があると分かり、止めたくない場合は事前に許可リストへ追加しておく対応が要ると判断できる。</p>
+    </div>
+    <a class="source-link" href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">
+      <span class="arrow">&#8599;</span> code.claude.com/docs/en/changelog
+    </a>
+  </div>
+
+  <footer>
+    AIニュース週報 第14回<br>
+    2026年11月9日〜11月16日分
+  </footer>
+
+</div>
+</body>
+</html>
